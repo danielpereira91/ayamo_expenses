@@ -4,59 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Despesa</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: top;
-            height: 100vh;
-            margin: 0;
-        }
-        h4 {
-            text-align: center;
-            margin: 0;
-        }
-        h3 {
-            text-align: center;
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style_despesa.css" media="screen" />
 </head>
 <body>
-    <div id="motivoDespesa">
+    <nav id="motivoDespesa">
         <h3>Motivo da Despesa</h3>
         <form action="/submit" method="post">
-            <input type="radio" name="motivoDespesa" id="motivo1" value="business and travel">
+            <input type="radio" name="motivoDespesa" id="motivo1" value="Business and Travel">
             <label for="motivo1">Business and Travel</label>
             <br>
-            <input type="radio" name="motivoDespesa" id="motivo2" value="food shows">
+            <input type="radio" name="motivoDespesa" id="motivo2" value="Food Shows">
             <label for="motivo2">Food Shows</label>
             <br>
-            <input type="radio" name="motivoDespesa" id="motivo3" value="intercompany">
+            <input type="radio" name="motivoDespesa" id="motivo3" value="Intercompany">
             <label for="motivo3">Intercompany</label>
             <br>
-            <input type="radio" name="motivoDespesa" id="motivo4" value="client and supplier">
+            <input type="radio" name="motivoDespesa" id="motivo4" value="Client and Supplier">
             <label for="motivo4">Client and Supplier</label>
             <br>
-            <input type="radio" name="motivoDespesa" id="motivo5" value="other travels">
+            <input type="radio" name="motivoDespesa" id="motivo5" value="Other Travels">
             <label for="motivo5">Other Travels</label>
         </form>
-    </div>
+    </nav>
     <br>
     <div id="tipoDespesa">
         <h3>Tipo de Despesa</h3>
         <form action="/submit" method="post">
-            <input type="radio" name="tipoDespesa" id="tipo1" value="hospedagem">
+            <input type="radio" name="tipoDespesa" id="tipo1" value="Hospedagem">
             <label for="tipo1">Hospedagem</label>
             <br>
-            <input type="radio" name="tipoDespesa" id="tipo2" value="passagem">
+            <input type="radio" name="tipoDespesa" id="tipo2" value="Passagem">
             <label for="tipo2">Passagem</label>
             <br>
-            <input type="radio" name="tipoDespesa" id="tipo3" value="mobilidade">
+            <input type="radio" name="tipoDespesa" id="tipo3" value="Mobilidade">
             <label for="tipo3">Mobilidade</label>
             <br>
-            <input type="radio" name="tipoDespesa" id="tipo4" value="alimentação">
+            <input type="radio" name="tipoDespesa" id="tipo4" value="Alimentação">
             <label for="tipo4">Alimentação</label>
             <br>
             <input type="radio" name="tipoDespesa" id="tipo5" value="Outras">
@@ -66,8 +49,8 @@
     <br>
     <div id="valorDespesa">
         <h4>Valor da Despesa</h4>
-        <form action="/submit" method="post">
-            <input type="text" name="valorDespesa" id="valorDespesa">
+        <form action="/submit" method="post" id="vlr_despesa">
+            <input type="text" name="valorDespesa" id="valorDespesa" placeholder="0,00">
         </form>
     </div>
     <br>
