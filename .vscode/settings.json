@@ -1,5 +1,10 @@
 {
     "cSpell.words": [
         "Ayamo"
-    ]
+    ],
+    "python.testing.pytestArgs": [
+        "ayamo_expenses"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
 }
