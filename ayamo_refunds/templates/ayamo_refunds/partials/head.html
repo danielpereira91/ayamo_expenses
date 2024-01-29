@@ -70,11 +70,8 @@
         body {
             font-size: 1.6rem;
             font-family: var(--font-primary);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: top;
-            background: var(--color-gray-1);
+            background: var(--color-gray-0);
+            position: relative;
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -86,10 +83,33 @@
             color: var(--color-ayamo-light-blue)
         }
         
-        .main-logo {
-            color: var(--color-ayamo-heading-dark-blue)
+        .container {
+            max-width: 144rem;
+            margin: 0 auto;
+            padding: var(--spacing-gutter-medium);
         }
 
+        .main-header-container {
+            background: var(--color-ayamo-heading-dark-blue);
+        }
+
+        .main-logo {
+            font-size: 4rem;
+            color: var(--color-ayamo-light-blue);
+            text-decoration: none;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .main-logo-icon {
+            margin-right: 2rem;
+        }
+
+        
 
     </style>
 
