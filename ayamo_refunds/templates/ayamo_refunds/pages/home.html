@@ -2,10 +2,16 @@
 
 <body>
     {% include "ayamo_refunds/partials/header.html" %}
-    {% include "ayamo_refunds/partials/search.html" %}
 
-    {% include "ayamo_refunds/partials/welcome.html" %}
+    <div class="welcome-bloc">
+        {% include "ayamo_refunds/partials/welcome-message.html" %}
+
+        {% include "ayamo_refunds/partials/add_expense.html" %}
+
+        {% include "ayamo_refunds/partials/welcome-text.html" %}
+    </div>
+
+    {% include "ayamo_refunds/partials/search.html" %}
     
-    {% include "ayamo_refunds/partials/add_expense.html" %}
 </body>
 </html>
