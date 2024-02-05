@@ -1,21 +1,11 @@
 {% include "ayamo_refunds/partials/head.html" %}
 
 <body>
-    <header class="main-header-container">
-        <div class="main-header container">
-            <h1>
-                <a class="main-logo" href="/">
-                    <i class="fa-solid fa-hand-holding-dollar main-logo-icon"></i>
-                    <span class="main-logo-text">
-                        Refunds
-                    </span>
-                </a>
-            </h1>
-        </div>
-    </header>
-    <br>
+    {% include "ayamo_refunds/partials/header.html" %}
+    {% include "ayamo_refunds/partials/search.html" %}
+
     <h2>Bem-vindo, {{user.name}}</h2>
-    <br>
+    
     <h4>Você tem:</h4>
     <p>{{user.to_approve}} itens aguardando <b>aprovação</b></p>
     <p>{{user.to_refund}} itens aguardando <b>reembolso</b></p>
@@ -23,6 +13,6 @@
     <p>{{user.last_15_days}} itens <b>finalizados nos últimos 15 dias</b></p>
     <br>
     <br>
-    <h3><a href="add_expense.html">Adicionar Despesa</a></h3>
+    {% include "ayamo_refunds/partials/add_expense.html" %}
 </body>
 </html>
