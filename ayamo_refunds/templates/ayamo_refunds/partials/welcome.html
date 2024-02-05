@@ -1,0 +1,15 @@
+<div class="welcome-container">
+    <div class="welcome-content">
+        <div class="welcome-message">
+            <h2>Bem-vindo, {{user.name}}</h2>
+        </div>
+        
+        <div class="welcome-text">
+            <h4 class="you-have-message">Você tem:</h4>
+            <p>{{user.to_approve}} itens aguardando <b>aprovação</b></p>
+            <p>{{user.to_refund}} itens aguardando <b>reembolso</b></p>
+            <p>{{user.to_reply}} itens aguardando <b>sua resposta</b></p>
+            <p>{{user.last_15_days}} itens <b>finalizados nos últimos 15 dias</b></p>
+        </div>
+    </div>
+</div>

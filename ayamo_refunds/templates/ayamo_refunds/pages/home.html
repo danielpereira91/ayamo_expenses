@@ -4,15 +4,8 @@
     {% include "ayamo_refunds/partials/header.html" %}
     {% include "ayamo_refunds/partials/search.html" %}
 
-    <h2>Bem-vindo, {{user.name}}</h2>
+    {% include "ayamo_refunds/partials/welcome.html" %}
     
-    <h4>Você tem:</h4>
-    <p>{{user.to_approve}} itens aguardando <b>aprovação</b></p>
-    <p>{{user.to_refund}} itens aguardando <b>reembolso</b></p>
-    <p>{{user.to_reply}} itens aguardando <b>sua resposta</b></p>
-    <p>{{user.last_15_days}} itens <b>finalizados nos últimos 15 dias</b></p>
-    <br>
-    <br>
     {% include "ayamo_refunds/partials/add_expense.html" %}
 </body>
 </html>
