@@ -1,11 +1,12 @@
-{% include "ayamo_refunds/partials/head.html" %}
-
+<html>
 <body>
     {% include "ayamo_refunds/partials/header.html" %}
 
     {% block content %}{% endblock content %}
     
     <div class="welcome-block">
+
+        {% block content %}{% endblock content %}
 
         {% include "ayamo_refunds/partials/welcome-message.html" %}
 
